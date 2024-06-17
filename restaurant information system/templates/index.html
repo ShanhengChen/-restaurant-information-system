@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Information System</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <h1>Restaurant Information System</h1>
+    <div class="list-container">
+        <div class="form-container">
+            <form id="filterForm">
+                <label for="locationFilter">Location:</label>
+                <select id="locationFilter" name="location">
+                    <option value="">Select Location</option>
+                </select>
+        
+                <label for="cuisineFilter">Cuisine:</label>
+                <select id="cuisineFilter" name="cuisine">
+                    <option value="">Select Cuisine</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Restaurant List -->
+    <div id="restaurantList">
+        <!-- Restaurants will be displayed here -->
+    </div>
+
+    <div class="all-form-container">
+        <!-- Button to show Add Restaurant Form -->
+        <button id="showAddFormBtn">Add Restaurant</button>
+
+        <!-- Add Restaurant Form (Initially hidden) -->
+        <form id="addForm" class="hidden">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="location">Location:</label><br>
+            <input type="text" id="location" name="location" required><br>
+
+            <label for="cuisine">Cuisine:</label><br>
+            <input type="text" id="cuisine" name="cuisine" required><br>
+
+            <label for="rating">Rating:</label><br>
+            <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" required><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <button type="submit">Add Restaurant</button>
+            <button type="button" id="cancelAddBtn">Cancel</button>
+        </form>
+
+        <!-- Update Restaurant Form (Initially hidden) -->
+        <form id="updateForm" class="hidden">
+            <input type="hidden" id="updateId" name="id">
+            <label for="updateName">Name:</label><br>
+            <input type="text" id="updateName" name="name" required><br>
+
+            <label for="updateLocation">Location:</label><br>
+            <input type="text" id="updateLocation" name="location" required><br>
+
+            <label for="updateCuisine">Cuisine:</label><br>
+            <input type="text" id="updateCuisine" name="cuisine" required><br>
+
+            <label for="updateRating">Rating:</label><br>
+            <input type="number" id="updateRating" name="rating" min="0" max="5" step="0.1" required><br>
+
+            <label for="updatePhone">Phone:</label><br>
+            <input type="text" id="updatePhone" name="phone"><br>
+
+            <label for="updateEmail">Email:</label><br>
+            <input type="email" id="updateEmail" name="email"><br>
+
+            <button type="submit">Update Restaurant</button>
+            <button type="button" id="cancelUpdateBtn">Cancel</button>
+        </form>
+    </div>
+    <script src="static/js/scripts.js"></script>
+</body>
+</html>

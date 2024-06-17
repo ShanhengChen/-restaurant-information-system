@@ -1,0 +1,142 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.all-form-container {
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+#showAddFormBtn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+    margin: 10px 0; 
+}
+
+#showAddFormBtn:hover {
+    background-color: #0056b3;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto; 
+
+}
+
+.restaurant {
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    margin: 10px auto; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.restaurant-info {
+    flex: 1 1 auto; 
+    padding-right: 20px; 
+}
+
+.restaurant-buttons {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.restaurant-buttons button {
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+}
+
+.form-container {
+    width: 95%;  
+    max-width: 900px;  
+    margin: 0 auto;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+
+#filterForm label {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.hidden {
+    display: none;
+}
